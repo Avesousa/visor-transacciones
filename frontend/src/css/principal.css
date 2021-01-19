@@ -1,0 +1,354 @@
+body { 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.15;
+    color: #333333;
+    background-color: #fff;
+}
+.panel{
+    margin-bottom: 12px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 11px;
+    padding: 7.5px 10px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    line-height: 1.15px;
+    color: white;
+}
+
+.panel-body{
+    padding: 10px;
+}
+
+.panel-primary{
+    border-color: #ffae37;
+}
+
+.panel-primary>.panel-heading{
+    color: #fff;
+    background-color: #ffae37;
+    border-color: #ffa41e;
+}
+
+.panel .form-group{
+    margin-bottom: .5rem;
+}
+
+.panel label{
+    margin-bottom: .2rem;
+}
+
+.panel .input-imago:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #ffa880;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(250, 177, 93, 0.25);
+}
+
+.panel .input-error-imago{
+    color: #495057;
+    background-color: #fff;
+    border-color: #ff3535;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 14, 14, 0.411);
+}
+
+.panel .btn{
+    width: 100%;
+}
+
+.panel .btn-alert{
+    width: 50%;
+}
+
+.panel th{
+    vertical-align: middle;
+    border: none;
+}
+
+table{
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table{
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+
+.table-borde > tbody > tr > td{
+  border: 1px solid #ddd;
+}
+
+.table-borde > thead > tr > th{
+  border: 1px solid #ffa41e;
+}
+
+thead > tr > th{
+  background-color: #ffae37;
+}
+
+.table-responsive{
+  display: table;
+}
+
+.table-main-imago tr{
+    cursor: pointer;
+}
+
+.table-main-imago tr:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.table-row-selected{
+    background-color: rgb(212, 211, 211);
+}
+
+.table-col-w-m{
+    min-width: 2%;
+}
+
+.table-col-w-l{
+  min-width: 8%;
+}
+
+.table-col-w-xl{
+    min-width: 20%;
+}
+
+.p-left-15px{
+    padding-left: 15px;
+}
+
+/* ALERTA componente */
+
+.bg_alert,
+.bg_load,
+.bg_pdf {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    position: fixed;
+    text-align: center;
+  }
+
+  .bg_load {
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 300;
+  }
+
+  .bg_pdf_white{
+    margin-top: 10vh;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .cuerpo_alerta,
+  .titulo_alerta {
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .titulo_alerta {
+    position: relative;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    background-color: #ff8c00;
+    margin-top: 10vh;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .titulo_alerta h3,
+  .titulo_alerta h3 a {
+    font-size: 18px;
+    font-weight: lighter;
+    display: flex;
+    letter-spacing: 0;
+  }
+  
+  .titulo_alerta h3 a {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 80%;
+  }
+  
+  .titulo_alerta h3 a:hover {
+    text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.8);
+  }
+  
+  .titulo_alerta div h3.der {
+    text-align: left;
+  }
+  
+  .titulo_alerta span.izq {
+    text-align: right;
+  }
+  
+  .cuerpo_alerta {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5%;
+    padding-top: 0.6%;
+    border-radius: 0px 0px 15px 15px;
+  }
+  
+  .cuerpo_alerta img {
+    width: 18%;
+    margin-bottom: 0.6%;
+  }
+  
+  .cuerpo_alerta p {
+    font-weight: 700;
+    color: darkorange;
+    margin-bottom: 0.3%;
+  }
+  
+  .btn_alerta {
+    width: 100%;
+  }
+  
+  .btn_alerta_margin {
+    padding: 1%;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+  
+  .cuerpo_alerta .btn_alerta input[type="button"] {
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    background: darkorange;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.45);
+  }
+  
+  .cuerpo_alerta .btn_alerta input[type="button"]:hover {
+    background: rgb(50, 120, 183);
+  }
+
+  .cuerpo_load{
+    width: 100%;
+    margin-top: 3%;
+  }
+  
+
+  .cuerpo_pdf{
+    width: 60%;
+    margin: auto;
+  }
+
+  .cuerpo_pdf embed{
+    margin-top: -45px;
+  }
+
+  .titulo_pdf{
+    margin: 0;
+    width: 100%;
+  }
+  
+  .div_info_detalle {
+    max-height: 25vh;
+    min-height: 25vh;
+    height: 25vh;
+    overflow: auto;
+  }
+  
+  .div_info_pago {
+    max-height: 20vh;
+    min-height: 20vh;
+    height: 20vh;
+    overflow: auto;
+  }
+
+  .form-control{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.15;
+    color: #333333;
+  }
+
+  .form-control[disabled]{
+    cursor: not-allowed;
+  }
+
+  .btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 11px;
+    line-height: 1.15;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .btn-primary, .btn-primary:disabled{
+    color: #fff;
+    background-color: #ffae37;
+    border-color: #ffa41e;
+  }
+
+  .btn-default, .btn-default:disabled{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+
+  .btn-detalle{
+    margin-bottom: 0.5%;
+  }
+
+  .ubicacion-inicial{
+    text-align: initial;
+  }
+
+  /*Hover*/ 
+  .btn:focus, .btn:hover{
+    text-decoration: none;
+  }
+
+  .btn-primary:hover, .btn-primary:focus{
+    color: #fff;
+    background-color: #ff9904;
+    border-color: #df8500;
+
+  }
+
+  .btn-primary:focus, .btn-default:focus{
+    box-shadow: 0 0 0 0.2rem rgba(250, 177, 93, 0.25);
+  }
+
+  .btn-default:hover, .btn-default:focus{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+  }

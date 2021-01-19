@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="thymeleaf.viewresolver.webjar" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+		<property name="templateEngine" ref="thymeleaf.engine.webjar" />
+		<property name="order" value="0" />
+		<property name="contentType" value="text/html; charset=UTF-8" />
+	</bean>
+
+	<bean id="thymeleaf.engine.webjar" class="org.thymeleaf.spring4.SpringTemplateEngine">
+		<property name="templateResolver" ref="thymeleaf.templateresolver.webjar" />
+		<property name="templateEngineMessageSource" ref="messagesource" />
+	</bean>
+
+	<bean id="thymeleaf.templateresolver.webjar" class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
+		<property name="prefix" value="/frontend/views/" />
+		<property name="suffix" value=".html" />
+		<property name="templateMode" value="HTML5" />
+		<property name="characterEncoding" value="UTF-8" />
+		<!-- property name="cacheable" value="${spring.thymeleaf.cache}" /-->
+	</bean>
+
+	<bean id="messagesource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:/spring-messages/messages</value>
+			</list>
+		</property>
+		<property name="defaultEncoding" value="UTF-8" />
+		<!-- property name="cacheMillis" value="${spring.messagesource.cachemillis}" /-->
+	</bean>
+</beans>

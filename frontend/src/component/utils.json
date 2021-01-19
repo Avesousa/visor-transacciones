@@ -1,0 +1,89 @@
+[
+    {   
+        \"SaleTrx_id\": 3027099190
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:10:44\",
+        \"Checkout_id\": 7,\"PosEvent_id\": 7000006,
+        \"Tender_Description\": \"Moneda Extranjera\",
+        \"total_amount\": 1380.0,
+        \"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"0\"
+    },
+    {
+        \"SaleTrx_id\": 3027099190,
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:10:44\",
+        \"Checkout_id\": 7,
+        \"PosEvent_id\": 7000006,
+        \"Tender_Description\": \"Efectivo\",
+        \"total_amount\": 1380.0,
+        \"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"1\"
+    },
+    {
+        \"SaleTrx_id\": 3027099191,
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:09:58\",
+        \"Checkout_id\": 7,\"PosEvent_id\": 7000005,
+        \"Tender_Description\": \"Moneda Extranjera\",
+        \"total_amount\": 1995.0,\"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"2\"
+    },
+    {
+        \"SaleTrx_id\": 3027099192,
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:09:15\",
+        \"Checkout_id\": 7,
+        \"PosEvent_id\": 7000004,
+        \"Tender_Description\": \"Moneda Extranjera\",
+        \"total_amount\": 1995.0,
+        \"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"3\"
+    },
+    {
+        \"SaleTrx_id\": 3027099192,
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:09:15\",
+        \"Checkout_id\": 7,
+        \"PosEvent_id\": 7000004,
+        \"Tender_Description\": \"Efectivo\",
+        \"total_amount\": 1995.0,
+        \"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"4\"
+    },
+    {
+        \"SaleTrx_id\": 3027099194,
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:07:54\",
+        \"Checkout_id\": 7,
+        \"PosEvent_id\": 7000002,
+        \"Tender_Description\": \"Moneda Extranjera\",
+        \"total_amount\": 997.5,
+        \"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"5\"
+    },
+    {
+        \"SaleTrx_id\": 3027099194,
+        \"CDay_id\": \"2020-06-16\",
+        \"OpPoint_Description\": \"997 - TIENDA CAPACITACION\",
+        \"TrxEndSecond_Description\": \"10:07:54\",
+        \"Checkout_id\": 7,\"PosEvent_id\": 7000002,
+        \"Tender_Description\": \"Efectivo\",
+        \"total_amount\": 997.5,
+        \"DocumentTender_id\": 0,
+        \"AffinityCardNbr_id\": \"\",
+        \"index\":\"6\"
+    }
+]

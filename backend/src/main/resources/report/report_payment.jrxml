@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_payment" pageWidth="330" pageHeight="300" columnWidth="315" leftMargin="10" rightMargin="5" topMargin="0" bottomMargin="0" uuid="b0551f7c-140e-452d-80af-5840403e2a1b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tipoPago_payment" class="java.lang.String"/>
+	<field name="medioPago_payment" class="java.lang.String"/>
+	<field name="importe_payment" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-10" y="0" width="330" height="20" backcolor="#749FB8" uuid="15fb2763-d6cc-471c-b6ad-368dc52e3d36">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="20" uuid="7a8eac14-4bdf-45a3-a7c4-16ffb4d40c0b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81ae143c-ff0c-4be4-b486-ac66b862bf1e"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medio de Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="95" height="20" uuid="cf6fdaf9-823b-4593-a409-922714b9e49b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6bf4b73a-472b-4c85-9098-5bbd4df48879"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Importe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="120" height="20" uuid="cfc7f99e-f24b-4cb2-a79e-635ef7a31ab3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81ae143c-ff0c-4be4-b486-ac66b862bf1e"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Medio de Pago]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-10" y="0" width="330" height="1" uuid="438de5c4-5754-41ee-88d0-2c3eadd80743">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="0" y="0" width="120" height="20" uuid="f22119c2-596a-4420-b0c8-4a39a599b181">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="346683b0-2680-4aa1-aa5f-5037fec90b17"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoPago_payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="100" height="20" uuid="865100b6-7792-4ac4-92b9-792053ecb545">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="81ae143c-ff0c-4be4-b486-ac66b862bf1e"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medioPago_payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="95" height="20" uuid="f0de3d3e-abfe-4fa3-9205-6ebb4c71226a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6bf4b73a-472b-4c85-9098-5bbd4df48879"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importe_payment}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-10" y="0" width="330" height="1" uuid="23ffb09b-2c43-4ca1-8062-0d7ce6dd3ccd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>
